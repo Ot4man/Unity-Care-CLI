@@ -50,7 +50,7 @@ class Patient
             ":adress" => $this->address
         ]);
 
-        echo "✅ Patient added successfully\n";
+        echo " Patient added successfully\n";
     }
 
     // LIST PATIENTS
@@ -85,7 +85,7 @@ class Patient
             ":id" => $id
         ]);
 
-        echo "✅ Patient updated successfully\n";
+        echo "Patient updated successfully\n";
     }
 
     // DELETE PATIENT

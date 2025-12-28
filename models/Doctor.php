@@ -44,7 +44,7 @@ class Doctor
             ":dept" => $this->dept_id
         ]);
 
-        echo "✅ Doctor added\n";
+        echo "Doctor added\n";
     }
 
     public static function getAll(PDO $db): array
@@ -74,13 +74,13 @@ class Doctor
             ":id" => $id
         ]);
 
-        echo "✅ Doctor updated\n";
+        echo "Doctor updated\n";
     }
 
     public static function delete(PDO $db, int $id): void
     {
         $stmt = $db->prepare("DELETE FROM doctors WHERE doctor_id = :id");
         $stmt->execute([":id" => $id]);
-        echo "🗑 Doctor deleted\n";
+        echo "Doctor deleted\n";
     }
 }

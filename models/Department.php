@@ -23,7 +23,7 @@ class Department
             ":location" => $this->location
         ]);
 
-        echo "✅ Department added\n";
+        echo "Department added\n";
     }
 
     public static function getAll(PDO $db): array
@@ -45,7 +45,7 @@ class Department
             ":id" => $id
         ]);
 
-        echo "✅ Department updated\n";
+        echo " Department updated\n";
     }
 
     public static function delete(PDO $db, int $id): void
