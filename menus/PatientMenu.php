@@ -110,7 +110,7 @@ Choice: ";
             break;
 
         default:
-            echo "❌ Invalid choice\n";
+            echo "Invalid choice\n";
     }
 
 } while ($choice != 5);
